@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A modern, accessible personal portfolio showcasing skills, projects, and contact information.">
+  <meta name="keywords" content="portfolio, web developer, accessible website, HTML5, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#12355b">
+  <meta property="og:title" content="Your Name | Portfolio">
+  <meta property="og:description" content="Accessible personal portfolio and selected projects.">
+  <meta property="og:type" content="website">
+  <title>Your Name | Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Your Name home">Your Name</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Accessible • Semantic • Responsive</p>
+        <h1 id="hero-title">Hello, I’m <span>Your Name</span>.</h1>
+        <p class="lead">I build clean, accessible and user-friendly web experiences using modern HTML5, CSS and JavaScript.</p>
+        <div class="button-row">
+          <a class="button primary" href="projects.html">View my projects</a>
+          <a class="button secondary" href="contact.html">Contact me</a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Portfolio introduction">
+        <div class="avatar" aria-hidden="true">YN</div>
+        <h2>Web Developer</h2>
+        <p>Focused on semantic markup, accessibility, responsive design and performance.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">What I do</p>
+        <h2 id="features-title">Building for everyone</h2>
+      </div>
+      <div class="card-grid three">
+        <article class="card">
+          <h3>Semantic HTML</h3>
+          <p>Meaningful HTML5 elements create a clear document structure for people and assistive technologies.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible UX</h3>
+          <p>Keyboard-friendly controls, visible focus states, labels and readable contrast help make the site usable.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive CSS</h3>
+          <p>Flexible layouts adapt comfortably across phones, tablets and desktop screens.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="cta-title">
+    <div class="container cta">
+      <div>
+        <p class="eyebrow">Let’s connect</p>
+        <h2 id="cta-title">Have a project in mind?</h2>
+        <p>Explore my work or send a message through the accessible contact form.</p>
+      </div>
+      <a class="button primary" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span data-year></span> Your Name. All rights reserved.</p>
+    <p><a href="contact.html">Contact</a> · <a href="projects.html">Projects</a></p>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
